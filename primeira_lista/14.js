@@ -16,5 +16,3 @@ const fatorial = (element) => {
 
 const inFatorial = parseInt(input("Digite um número: "));
 console.log(fatorial(inFatorial));
-
-console.log("Fim do programa");
