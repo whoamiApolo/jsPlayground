@@ -23,7 +23,3 @@ Node.js e npm (ou yarn): Certifique-se de ter o Node.js e o gerenciador de pacot
 ```bash
 npm install prompt-sync
 ```
-<<<<<<< HEAD
-=======
-
->>>>>>> 77658a0f78e9d0382f44673ffb13e19f8d7e3212
