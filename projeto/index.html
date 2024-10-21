@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/output.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="/styles/swiper.css">
+  <link rel="stylesheet" href="/styles/testimonial.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <title>Document</title>
+</head>
+
+<body class="lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-my-blue">
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <span class="font-my-font self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Apollo</span>
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#sobre" class="block py-2 px-3 rounded md:bg-transparent md:p-0 hover:text-neutral-600 
+                aria-current=" page">
+              Sobre
+            </a>
+          </li>
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+              class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-100  md:border-0 md:p-0 md:w-auto dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700  hover:text-neutral-600 ">
+              Outros
+              <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:text-white">Entre em Contato</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Assine
+                    Agora</a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+          <li>
+            <a href="#servicos"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white  hover:text-neutral-600">Serviços</a>
+          </li>
+          <li>
+            <a href="#testimonies"
+              class="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 hover:text-neutral-600">Testemunhos</a>
+          </li>
+          <li>
+            <a href="#contato"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 dark:text-white hover:text-neutral-600">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper mt-8 h-screen  w-full  bg-black">
+      <div class="swiper-wrapper m-auto ">
+        <div class="swiper-slide h-full">
+          <img
+            src="https://images.unsplash.com/photo-1592681815026-42b9af2e46ea?q=80&w=1501&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" loading="lazy" class="min-h-full bg-cover bg-center">
+        </div>
+        <div class="swiper-slide h-full ">
+          <img
+            src="https://images.unsplash.com/photo-1614588876795-732335adcb48?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" loading="lazy" class="min-h-full bg-contain bg-center">
+        </div>
+        <div class="swiper-slide h-full">
+          <img
+            src="https://images.unsplash.com/photo-1592681814441-00516620588d?q=80&w=1362&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" loading="lazy" class="min-h-full bg-cover bg-center">
+        </div>
+        
+        <div class="swiper-slide h-full">
+          <img
+            src="https://images.unsplash.com/photo-1533998616656-0809bbef1040?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" loading="lazy" class="min-h-full bg-cover bg-center">
+        </div>
+        <div class="swiper-slide h-full">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664201890484-a5f7109c8e56?q=80&w=1352&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" loading="lazy" class="min-h-full bg-cover bg-center">
+        </div>
+        
+
+        <!-- Botões de navegação (opcional) -->
+        <div class="swiper-button-next "></div>
+        <div class="swiper-button-prev "></div>
+        <!-- Paginação (opcional) -->
+        <div class="swiper-pagination"></div>
+      </div>
+  </main>
+
+
+  <section id="sobre" class="min-h-screen mb-32">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#111111" fill-opacity="1"
+        d="M0,96L12.6,106.7C25.3,117,51,139,76,154.7C101.1,171,126,181,152,197.3C176.8,213,202,235,227,245.3C252.6,256,278,256,303,250.7C328.4,245,354,235,379,208C404.2,181,429,139,455,106.7C480,75,505,53,531,42.7C555.8,32,581,32,606,48C631.6,64,657,96,682,133.3C707.4,171,733,213,758,208C783.2,203,808,149,834,133.3C858.9,117,884,139,909,165.3C934.7,192,960,224,985,234.7C1010.5,245,1036,235,1061,202.7C1086.3,171,1112,117,1137,128C1162.1,139,1187,213,1213,202.7C1237.9,192,1263,96,1288,74.7C1313.7,53,1339,107,1364,133.3C1389.5,160,1415,160,1427,160L1440,160L1440,0L1427.4,0C1414.7,0,1389,0,1364,0C1338.9,0,1314,0,1288,0C1263.2,0,1238,0,1213,0C1187.4,0,1162,0,1137,0C1111.6,0,1086,0,1061,0C1035.8,0,1011,0,985,0C960,0,935,0,909,0C884.2,0,859,0,834,0C808.4,0,783,0,758,0C732.6,0,707,0,682,0C656.8,0,632,0,606,0C581.1,0,556,0,531,0C505.3,0,480,0,455,0C429.5,0,404,0,379,0C353.7,0,328,0,303,0C277.9,0,253,0,227,0C202.1,0,177,0,152,0C126.3,0,101,0,76,0C50.5,0,25,0,13,0L0,0Z">
+      </path>
+    </svg>
+
+    <div class="flex flex-col items-center md:justify-center md:flex-row md:gap-10 mb-10">
+      <h1 class="font-bold text-3xl text-center md:text-5xl">Sobre</h1>
+      <img src="/assets/marketplace.svg" alt="" srcset="" class=" max-w-md">
+    </div>
+
+    <p class="pt-10 text-justify lg:px-10">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas animi corporis deleniti amet doloremque culpa at
+      ab, quasi repellendus nostrum, voluptates consequuntur et earum corrupti? Sunt quidem numquam aperiam dicta
+      eligendi ducimus optio quod accusantium, nisi nemo quisquam amet, at veritatis aliquid alias placeat quia fugiat
+      hic eos impedit maiores nihil sequi! Minima iure eos non unde, omnis quasi voluptate expedita beatae accusamus ab
+      reprehenderit ex excepturi eius ut. Tempore obcaecati accusamus totam delectus voluptas consequatur ad
+      consectetur, ex quisquam repellat laboriosam expedita aperiam tenetur fugit! Perspiciatis explicabo, repudiandae
+      voluptate, asperiores voluptas necessitatibus quas cupiditate et quo ratione esse sunt.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas animi corporis deleniti amet doloremque culpa at
+      ab, quasi repellendus nostrum, voluptates consequuntur et earum corrupti? Sunt quidem numquam aperiam dicta
+      eligendi ducimus optio quod accusantium, nisi nemo quisquam amet, at veritatis aliquid alias placeat quia fugiat
+      hic eos impedit maiores nihil sequi! Minima iure eos non unde, omnis quasi voluptate expedita beatae accusamus ab
+      reprehenderit ex excepturi eius ut. Tempore obcaecati accusamus totam delectus voluptas consequatur ad
+      consectetur, ex quisquam repellat laboriosam expedita aperiam tenetur fugit! Perspiciatis explicabo, repudiandae
+      voluptate, asperiores voluptas necessitatibus quas cupiditate et quo ratione esse sunt.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas animi corporis deleniti amet doloremque culpa at
+      ab, quasi repellendus nostrum, voluptates consequuntur et earum corrupti? Sunt quidem numquam aperiam dicta
+      eligendi ducimus optio quod accusantium, nisi nemo quisquam amet, at veritatis aliquid alias placeat quia fugiat
+      hic eos impedit maiores nihil sequi! Minima iure eos non unde, omnis quasi voluptate expedita beatae accusamus ab
+      reprehenderit ex excepturi eius ut. Tempore obcaecati accusamus totam delectus voluptas consequatur ad
+      consectetur, ex quisquam repellat laboriosam expedita aperiam tenetur fugit! Perspiciatis explicabo, repudiandae
+      voluptate, asperiores voluptas necessitatibus quas cupiditate et quo ratione esse sunt.
+    </p>
+
+  </section>
+
+  <section id="servicos" class="min-h-screen mb-32">
+    <h2 class="font-bold text-3xl text-center md:text-4xl mb-11">Serviços</h2>
+    <div id="produtos-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+    </div>
+
+    <!-- Botões de Paginação -->
+    <div class="pagination mt-5 flex justify-center items-center gap-4 w-1/2 m-auto">
+      <button id="prev-button"
+        class="w-full text-black bg-white hover:bg-black hover:text-white transition duration-0 hover:duration-1000 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-5 py-2.5 text-center" disabled>Anterior</button>
+      <button id="next-button"
+        class="w-full text-black bg-white hover:bg-black hover:text-white transition duration-0 hover:duration-1000 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-5 py-2.5 text-center">Próximo</button>
+    </div>
+
+  </section>
+
+  <section id="testimonies" class="bg-gray-100 pt-32 mb-32">
+    <h2 class="text-3xl font-bold text-center mb-8">O que nossos clientes dizem</h2>
+    <section data-aos="fade-up" data-aos-duration="3000" id="testemunhos"
+      class=" flex flex-wrap  justify-center gap-11 p-4 ">
+    </section>
+  </section>
+
+  <section id="contato" class="min-h-fit mb-32 px-4">
+    <h2 class="text-3xl font-bold text-center mb-11">Envie nos um e-mail: </h2>
+    <form id="contact-form" class="flex flex-col max-w-2xl m-auto">
+      <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">Name</label>
+      <input type="text" id="name" name="user_name"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mb-5"
+        required>
+
+      <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Email</label>
+      <input type="email" id="email" name="user_email"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mb-5"
+        required>
+
+      <label for="message" class="block mb-2 text-sm font-medium text-gray-900 ">Message</label>
+      <textarea id="message" name="message"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mb-11"
+        required></textarea>
+
+      <button type="submit"
+        class="text-black bg-white hover:bg-black hover:text-white transition duration-0 hover:duration-1000 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-5 py-2.5 text-center ">Send</button>
+    </form>
+
+    <p id="status"></p>
+  </section>
+
+
+  <footer class="bg-white dark:bg-gray-900">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+          <a href="#" class="flex items-center">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Apollo</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">CSS3</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Tailwind CSS</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline ">Github</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Discord</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#"
+            class="hover:underline">Apollo™</a>. All Rights Reserved.
+        </span>
+        <div class="flex mt-4 sm:justify-center sm:mt-0">
+          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 8 19">
+              <path fill-rule="evenodd"
+                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">Facebook page</span>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 21 16">
+              <path
+                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+            </svg>
+            <span class="sr-only">Discord community</span>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 20 17">
+              <path fill-rule="evenodd"
+                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">Twitter page</span>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">GitHub account</span>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">Dribbble account</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="index.js"></script>
+  <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

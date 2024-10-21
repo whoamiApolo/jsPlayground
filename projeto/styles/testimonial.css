@@ -1,0 +1,26 @@
+.user-testimonial {
+    text-align: center;
+    width: 350px;
+    height: 350px;
+}
+
+.user-testimonial img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.user-testimonial span {
+    font-size: 24px;
+    margin: 0;
+}
+
+.user-testimonial p {
+    font-size: 16px;
+    margin: 0;
+    color: #666;
+    text-align: justify;
+}
