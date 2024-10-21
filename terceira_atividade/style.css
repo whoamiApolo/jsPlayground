@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --cor-background: #b0c4de;
+  --cor-text: #000000;
+}
+
+body {
+  background-color: var(--cor-background);
+  display: grid;
+  place-items: center;
+}
+
+.title-h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#navigation nav {
+  width: 100vw;
+  min-height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+  justify-items: center;
+  align-items: center;
+
+  font-size: 1.6rem;
+  padding: 0.8rem 1.6rem ;
+}
+
+#navigation nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 1.2rem;
+}
+
+#navigation nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#navigation nav ul li a {
+  font-weight: bold;
+  color: var(--cor-text);
+  font-size: 1.8rem;
+}
+
+main {
+  margin: 1.6rem;
+}
+
+main #main-content h1 {
+  font-size: 2.4rem;
+  color: var(--cor-text);
+  text-align: center;
+  margin: 2.4rem;
+}
+
+main #main-content #primary-content {
+  height: 90vh;
+}
+
+
+main #main-content #primary-content ul li button {
+  border: none;
+  width: 100%;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+main #main-content #primary-content ul li button:hover {
+  background-color: var(--cor-text);
+  color: var(--cor-background);
+}
+
+main #main-content #primary-content p {
+  font-size: 1.6rem;
+  padding: 2.4rem 1.6rem 0.8rem;
+  text-align: justify;
+}
+
+main #main-content #secondary-content {
+  font-size: 1.6rem;
+  min-height: 100vh;
+
+  gap: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main #main-content #secondary-content .text p {
+  text-align: justify;
+  margin: 1.6rem;
+}
+
+main #main-content #secondary-content figure img {
+  width: 27.5rem;
+  object-fit: cover;
+  /*
+  transition: transform 0.3s ease-in-out;
+  */
+}
+
+main #main-content #secondary-content figure {
+  text-align: center;
+}
+/*
+main #main-content #secondary-content figure img:hover {
+  transform: scale(1.1);
+}
+*/
+main #main-content #secondary-content figure figcaption {
+  margin: 1rem;
+}
+
+main #main-content #secondary-content #article {
+  text-align: center;
+  width: 100%;
+}
+
+main #main-content #secondary-content #article .video-player {
+  width: 27.5rem;
+  height: auto;
+  margin: 2rem 0;
+}
+
+main #main-content #secondary-content #article .plus {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+
+}
+
+
+main #main-content #secondary-content #article .plus p a {
+color: var(--cor-text);
+  font-size: 1.6rem;
+}
+
+#footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  background: var(--cor-text);
+  color: var(--cor-background);
+
+  margin-top: 3.2rem;
+}
+
+@media only screen and (min-width: 31rem) {
+  #navigation nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+/*640px*/
+@media only screen and (min-width: 40rem) {
+  #navigation nav ul li a {
+    font-size: 2.4rem;
+  }
+  
+  main #main-content {
+    padding: 3.2rem;
+  }
+
+  main #main-content #secondary-content #article {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  main #main-content #secondary-content {
+  gap: 10rem;
+  }
+
+  main #main-content #secondary-content figure img {
+    background: red;
+    width: 50rem;
+  }
+
+  main #main-content #secondary-content #article .video-player {
+    width: 50rem;
+    height: calc((800px * 9) / 16); 
+  }
+
+  #footer {
+    margin-top: 4.8rem;
+  }
+}
+
+/*768px*/
+@media only screen and (min-width: 48rem) {
+  main #main-content {
+    padding: 3.2rem;
+  }
+
+  main #main-content #secondary-content #article {
+    max-width: 80rem;
+  }
+
+  #footer {
+    margin-top: 6.4rem;
+  }
+}
+
+/*1024px*/
+@media only screen and (min-width: 64rem) {
+  #navigation nav, main,  #footer {
+    max-width: 1024px;
+  }
+
+  #navigation nav ul li a {
+    font-weight: bold;
+    color: var(--cor-text);
+    font-size: 3.2rem;
+  }
+  
+  main #main-content h1{
+    font-size: 3.2rem;
+  }
+
+  main #main-content #primary-content ul li button {
+    height: 4rem;
+  }
+
+  main #main-content #secondary-content figure img {
+    background: red;
+    width: 70rem;
+  }
+
+  main #main-content #secondary-content #article .video-player {
+    width: 70rem;
+    height: calc((800px * 9) / 16); 
+  }
+
+  
+}
+
+
+/*1280px*/
+@media only screen and (min-width: 80rem) {
+}
+/*1536px*/
+@media only screen and (max-width: 96rem) {
+}
+
+.stack {
+  width: 50%;
+  height: 300px;
+  position: relative; /* Para posicionar os elementos dentro da pilha */
+  margin: 0 auto; /* Centraliza o container */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.element {
+  width: 100%;
+  height: 40px;
+  margin: 10px 5px;
+  text-align: center;
+  line-height: 40px; /* Centraliza o texto verticalmente */
+  position: absolute; /* Para posicionar os elementos dentro da pilha */
+  bottom: 0; /* Inicialmente, todos os elementos ficam na base da pilha */
+  transition: bottom 0.5s; /* Adiciona uma transição suave para a animação */
+  border-radius: 0.8rem 0.8rem 0 0;
+  background-color: var(--cor-text);
+  border-bottom: var(--cor-background) 1px solid;
+  color: white;
+  font-size: 1.6rem;
+}

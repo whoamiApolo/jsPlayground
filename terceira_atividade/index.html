@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pilha</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header id="navigation">
+      <nav>
+        <img src="pilha.jpeg" alt="" srcset="" />
+
+        <ul class="menu-lista">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li>
+            <a href="#footer">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section id="main-content">
+        <h1>Explorando a Estrutura de Dados - Pilha</h1>
+        <section id="primary-content">
+          <ul>
+            <div class="stack"></div>
+            <li>
+              <button id="push">Push</button>
+            </li>
+            <li>
+              <button id="pop">Pop</button>
+            </li>
+          </ul>
+
+          <p>
+            Nesta seção, você poderá visualizar de forma interativa as operações
+            fundamentais de uma pilha: o "push", que insere um novo elemento no
+            topo, e o "pop", que remove o elemento do topo. A animação dinâmica
+            ilustrará o princípio LIFO (último a entrar, primeiro a sair),
+            característico dessa estrutura de dados tão importante na
+            computação.
+          </p>
+        </section>
+        <aside id="secondary-content">
+          <h2 id="sobre" class="title-h2">Sobre</h2>
+          <section class="text">
+            <p>
+              Imagine um estacionamento com várias vagas em fila, onde a entrada
+              e a saída são pela mesma extremidade.
+            </p>
+            <p>
+              Entrada de um carro (PUSH): Quando um novo carro chega ao
+              estacionamento, ele só pode estacionar na primeira vaga
+              disponível, que é a mais próxima da entrada/saída. Isso é
+              equivalente à operação "push" em uma pilha, onde um novo elemento
+              é adicionado ao topo.
+            </p>
+            <p>
+              Saída de um carro (POP): Quando um carro precisa sair do
+              estacionamento, o último carro que entrou precisa sair primeiro,
+              para liberar o caminho dos outros. Isso representa a operação
+              "pop" em uma pilha, onde o elemento do topo é removido.
+            </p>
+          </section>
+
+          <figure>
+            <img src="ed-pilha.png" alt="" />
+            <figcaption>
+              Representação gráfica de uma pilha, com elementos
+            </figcaption>
+          </figure>
+
+          <section id="article">
+            <h2 class="title-h2">Informações adicionais:</h2>
+            <iframe
+              class="video-player"
+              src="https://www.youtube.com/embed/EfF1M7myAyY?si=6_Y5VZFcJcHba0pR"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <section class="plus">
+              <p>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"
+                  >MDN</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.alura.com.br/artigos/estruturas-de-dados-introducao#pilha"
+                  >Alura</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.devmedia.com.br/pilhas-fundamentos-e-implementacao-da-estrutura-em-java/28241"
+                  >DevMedia</a
+                >
+              </p>
+            </section>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p id="footer-message">
+        Desenvolvido com &#x2764; <span id="city"></span>
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
